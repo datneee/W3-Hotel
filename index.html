@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="icon" href="https://cdn.shopify.com/s/files/1/0274/1783/7625/files/w3s-logo-256.png?v=1619519194" type="image/gif" sizes="16x16">
+    <link rel="stylesheet" href="./asset/style.css">
+    <link rel="stylesheet" href="./asset/responsive.css">
+    <title>W3 Hotel</title>
+</head>
+<body>
+    <div class="header">
+        <div class="header-left">
+            <div class="header-logo">
+                <i class="fas fa-bed"></i>
+                <h4>Logo</h4>
+            </div>
+            <ul class="header-list">
+                <a href="#room">
+                    <li class="header-item hover-box">
+                        Rooms
+                    </li>
+                </a>
+                <a href="#about">    
+                    <li class="header-item hover-box">
+                        About                    
+                    </li>
+                </a>
+                <a href="#contact">    
+                    <li class="header-item hover-box">
+                        Contact
+                    </li>
+                </a>
+            </ul>
+        </div>
+        <div class="header-search">
+            <i class="fas fa-search"></i>
+            <input type="text" placeholder="Tìm kiếm...">
+        </div>
+    </div>
+    <div class="container">
+        <div class="banner">
+            <!-- ảnh relative + hotel name absolute -->
+            <img src="https://www.w3schools.com/w3images/hotel.jpg" alt="">
+            <div class="hotel-name">
+                <div class="hotel-name__heading">
+                    <i class="fas fa-bed"></i>
+                    <h1 class="text-heading">Hotel name</h1>
+                </div>
+                <ul class="hotel-name__form-list row">
+                    <li class="hotel-name__item">
+                        <label for="">
+                            <i class="far fa-calendar-alt"></i>
+                            <span>Check in</span>
+                        </label>
+                        <input class="pd8-16"  type="date">
+                    </li>
+                    <li class="hotel-name__item">
+                        <label for="">
+                            <i class="far fa-calendar-alt"></i>
+                            <span>Check out</span>
+                        </label>
+                        <input class="pd8-16"  type="date">
+                    </li>
+                    <li class="hotel-name__item">
+                        <label for="">
+                            <i class="fas fa-female"></i>
+                            <span>Người lớn</span>
+                        </label>
+                        <input class="pd8-16"  type="number" placeholder="0">
+                    </li>
+                    <li class="hotel-name__item">
+                        <label for="">
+                            <i class="fas fa-child"></i>
+                            <span>Trẻ con</span>
+                        </label>
+                        <input class="pd8-16"  type="number" placeholder="0">
+                    </li>
+                </ul>
+                <button class="btn raw">
+                    <i class="fas fa-search"></i>
+                    <span>Tìm kiếm</span>
+                </button>
+            </div>
+        </div>
+        <div id="room" class="rooms pd32-16">
+            <div class="rooms-heading">
+                <h2 class="text-heading">Rooms</h2>
+                <h5 class="text-decription">Make yourself at home is our slogan. We offer the best beds in the industry. Sleep well and rest well.</h5>
+            </div>
+            <ul class="room-list">
+                <li class="room__item">
+                    <label for="room-input">
+                        <i class="far fa-calendar-alt"></i>
+                        <span>Check in</span>
+                    </label>
+                    <input class="pd8-16" id="room-input"  type="date">
+                </li>
+                <li class="room__item">
+                    <label for="room-input" for="">
+                        <i class="far fa-calendar-alt"></i>
+                        <span>Check out</span>
+                    </label>
+                    <input class="pd8-16" id="room-input" type="date">
+                </li>
+                <li class="room__item">
+                    <label for="room-input" for="">
+                        <i class="fas fa-female"></i>
+                        <span>Người lớn</span>
+                    </label>
+                    <input class="pd8-16" id="room-input" type="number" placeholder="0">
+                </li>
+                <li class="room__item">
+                    <label for="room-input" for="">
+                        <i class="fas fa-child"></i>
+                        <span>Trẻ con</span>
+                    </label>
+                    <input class="pd8-16" id="room-input" type="number" placeholder="0">
+                </li>
+                <li class="room__item room-search">
+                    <span>Tìm kiếm</span>
+                    <button class="btn">
+                        <i class="fas fa-search"></i>
+                        <span>Tìm kiếm</span>
+                    </button>
+                </li>
+            </ul>
+            <div class="rooms-views row">
+                <ul class="rooms-view__list">
+                    <li class="rooms-view__item">
+                        <img src="https://www.w3schools.com/w3images/room_single.jpg" alt="">
+                        <ul class="view-list">
+                            <li class="view-item">
+                                <h2>Single room</h2>
+                            </li>
+                            <li style="opacity: 0.6;" class="view-item">
+                                From $99
+                            </li>
+                            <li class="view-item">
+                                Single bed
+                            </li>
+                            <li class="view-item">
+                                15m2
+                            </li>
+                            <li class="view-item">
+                                <div class="item-icons">
+                                    <i class="fas fa-bath"></i>
+                                    <i class="fas fa-phone-alt"></i>
+                                    <i class="fas fa-wifi"></i>
+                                </div>
+                            </li>
+                            <li class="view-item">
+                                <button class="btn">Choose room</button>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="rooms-view__item">
+                        <img src="https://www.w3schools.com/w3images/room_double.jpg" alt="">
+                        <ul class="view-list">
+                            <li class="view-item">
+                                <h2>Double room</h2>
+                            </li>
+                            <li style="opacity: 0.6;" class="view-item">
+                                From $149
+                            </li>
+                            <li class="view-item">
+                                Queen-size bed
+                            </li>
+                            <li class="view-item">
+                                25m2
+                            </li>
+                            <li class="view-item">
+                                <div class="item-icons">
+                                    <i class="fas fa-bath"></i>
+                                    <i class="fas fa-phone-alt"></i>
+                                    <i class="fas fa-wifi"></i>
+                                    <i class="fas fa-tv"></i>
+                                </div>
+                            </li>
+                            <li class="view-item">
+                                <button class="btn">Choose room</button>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="rooms-view__item">
+                        <img src="https://www.w3schools.com/w3images/room_deluxe.jpg" alt="">
+                        <ul class="view-list">
+                            <li class="view-item">
+                                <h2>Deluxe Room</h2>
+                            </li>
+                            <li style="opacity: 0.6;" class="view-item">
+                                From $199
+                            </li>
+                            <li class="view-item">
+                                King-size bed
+                            </li>
+                            <li class="view-item">
+                                40m2
+                            </li>
+                            <li class="view-item">
+                                <div class="item-icons">
+                                    <i class="fas fa-bath"></i>
+                                    <i class="fas fa-phone-alt"></i>
+                                    <i class="fas fa-wifi"></i>
+                                    <i class="fas fa-glass-martini-alt"></i>
+                                    <i class="fas fa-gamepad"></i>
+                                </div>
+                            </li>
+                            <li class="view-item">
+                                <button class="btn">Choose room</button>
+                            </li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+        <div id="about" class="about pd32-16">
+            <h3 class="text-heading">About</h3>
+            <div class="about-content">
+                <div class="about-content__text">
+                    <h5 class="text-decription">Our hotel is one of a kind. It is truely amazing. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</h5>
+                    <p>
+                        We accept
+                        <i class="far fa-credit-card"></i>
+                        <i class="fab fa-cc-mastercard"></i>
+                        <i class="fab fa-cc-amex"></i>
+                        <i class="fab fa-cc-paypal"></i>
+                    </p>
+                </div>
+                <div class="about-content__img">
+                    <img src="https://www.w3schools.com/w3images/map.jpg" alt="">
+                </div>
+            </div>
+            <ul class="about-contact">
+                <li>
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>423 Some adr, Chicago, US</span>
+                </li>
+                <li>
+                    <i class="fas fa-phone-alt"></i>
+                    <span>Phone: +00 151515</span>
+                </li>
+                <li>
+                    <i class="far fa-envelope"></i>
+                    <span>Email: mail@mail.com
+                    </span>
+                </li>
+            </ul>
+        </div>
+        <div class="warning">
+            <div class="box-icon">
+                <i class="fas fa-info"></i>
+            </div>
+            <span class="text-decription">On demand, we can offer playstation, babycall, children care, dog equipment, etc.</span>
+        </div>
+        <div class="our-hotels pd32-16">
+            <h2 class="text-heading">
+                Our Hotels
+            </h2>
+            <p class="text-decription">
+                You can find our hotels anywhere in the world:
+            </p>
+            <ul class="our-hotels__imgs">
+                <li class="our-hotels__imgs-item">
+                    <img src="https://www.w3schools.com/w3images/cinqueterre.jpg" alt="">
+                    <span class="img-name">Cinque Terre</span>
+                </li>
+                <li class="our-hotels__imgs-item">
+                    <img src="https://www.w3schools.com/w3images/cinqueterre.jpg" alt="">
+                    <span class="img-name">Cinque Terre</span>
+                </li>
+                <li class="our-hotels__imgs-item">
+                    <img src="https://www.w3schools.com/w3images/cinqueterre.jpg" alt="">
+                    <span class="img-name">Cinque Terre</span>
+                </li>
+                <li class="our-hotels__imgs-item">
+                    <img src="https://www.w3schools.com/w3images/cinqueterre.jpg" alt="">
+                    <span class="img-name">Cinque Terre</span>
+                </li>
+                <li class="our-hotels__imgs-item">
+                    <img src="https://www.w3schools.com/w3images/cinqueterre.jpg" alt="">
+                    <span class="img-name">Cinque Terre</span>
+                </li>
+            </ul>
+        </div>
+        <div class="subscribe pd32-16">
+            <h2 class="text-heading">Get the best offers first!</h2>
+            <p class="text-decription">Join our newsletter.</p>
+            <div class="sub-input">
+                <label for="subscribe-input">E-mail</label>
+                <input id="subscribe-input" class="pd8-16" placeholder="Your email address">
+
+            </div>
+            <button class="btn">Subscribe</button>
+        </div>
+        <div id="contact" class="contact pd32-16">
+            <h2 class="text-heading">Contact</h2>
+            <p class="text-decription">If you have any questions, do not hesitate to ask them.</p>
+            <ul class="contact-list">
+                <li class="contact-list__item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Chicago, US</span>
+                </li>
+                <li class="contact-list__item">
+                    <i class="fas fa-phone-alt"></i>
+                    <span>Phone: +00 151515</span>
+                </li>
+                <li class="contact-list__item">
+                    <i class="far fa-envelope"></i>
+                    <span>Email: mail@mail.com</span>
+                </li>
+            </ul>
+            <div class="contact-form">
+                <input class="pd8-16" type="text" placeholder="Name">
+                <input class="pd8-16" type="text" placeholder="Email">
+                <input class="pd8-16" type="text" placeholder="Message">
+                <button class="btn">Send message</button>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <h5 class="footer-top">Find Us On</h5>
+        <ul class="footer-list">
+            <li class="footer-item">
+                <i class="fab fa-facebook"></i>
+            </li>
+            <li class="footer-item">
+                <i class="fab fa-instagram"></i>
+            </li>
+            <li class="footer-item">
+                <i class="fab fa-snapchat"></i>
+            </li>
+            <li class="footer-item">
+                <i class="fab fa-pinterest-p"></i>
+            </li>
+            <li class="footer-item">
+                <i class="fab fa-twitter"></i>
+            </li>
+            <li class="footer-item">
+                <i class="fab fa-linkedin"></i>
+            </li>
+        </ul>
+        <div class="footer-end">
+            <p>
+                Powered by
+                <a href="https://www.w3schools.com/w3css/default.asp">w3.css</a>
+            </p>
+        </div>
+    </div>
+</body>
+</html>

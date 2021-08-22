@@ -1,0 +1,77 @@
+@media (min-width: 740px) and (max-width: 800px){
+    .btn {
+        width: 100%;
+    }
+    .room-search {
+        grid-column: 1 / 3;
+    }
+    .room-list {
+        grid-template-columns: 1fr 1fr;
+    }
+    .about-content {
+        grid-template-columns: 1fr 1fr;
+    }
+    .about-contact {
+        font-size: 18px;
+    }
+}
+@media (min-width: 525px) (max-width: 740px) {
+    .hotel-name {
+        display: none;
+    }
+    .about-contact {
+        font-size: 18px;
+    }
+    .room-list {
+        grid-template-columns: 1fr 1fr;
+    }
+    .btn {
+        width: 100%;
+    }
+    .room-search {
+        grid-column: 1 / 3;
+    }
+    .about-content {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media (max-width: 525px){
+    .header-list {
+        display: none;
+    }
+    .header-search {
+        width: 40%;
+        position: relative;
+        display: flex;
+        background-color: transparent;
+
+    }
+    .header-search i {
+        background-color: var(--primary-color);
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 100%;
+    }
+    .hotel-name {
+        display: none;
+    }
+    .btn {
+        width: 100%;
+    }
+    .room-list {
+        grid-template-columns: 1fr;
+    }
+    .rooms-view__list {
+        grid-template-columns: 1fr;
+    }
+    .about-content {
+        grid-template-columns: 1fr;
+    }
+    .about-contact {
+        flex-direction: column;
+    }
+    .our-hotels__imgs {
+        grid-template-columns: 1fr;
+    }
+}
