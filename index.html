@@ -11,7 +11,7 @@
     <title>W3 Hotel</title>
 </head>
 <body>
-    <div class="header">
+    <div id="header" class="header">
         <div class="header-left">
             <div class="header-logo">
                 <i class="fas fa-bed"></i>
@@ -40,7 +40,7 @@
             <input type="text" placeholder="Tìm kiếm...">
         </div>
     </div>
-    <div class="container">
+    <div id="container" class="container">
         <div class="banner">
             <!-- ảnh relative + hotel name absolute -->
             <img src="https://www.w3schools.com/w3images/hotel.jpg" alt="">
@@ -350,5 +350,24 @@
             </p>
         </div>
     </div>
+    <script>
+        const header = document.getElementById('header');
+        const container = document.getElementById('container')
+        var scrollBefore = 0;
+        window.addEventListener('scroll',function(e){
+            const scrolled = window.scrollY;
+
+            if(scrollBefore > scrolled){
+                header.classList.add('fix');
+                container.classList.add('mr-container');
+                scrollBefore = scrolled;
+            }else{
+                header.classList.remove('fix');
+                container.classList.remove('mr-container');
+                scrollBefore = scrolled;
+            }
+
+        })
+    </script>
 </body>
 </html>
